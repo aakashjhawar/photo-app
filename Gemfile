@@ -10,6 +10,7 @@ gem 'devise'
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
 gem 'jquery-rails'
+gem 'stripe'
 # gem 'gem-that-requires-env-variables'
 
 # Use postgresql as the database for Active Record

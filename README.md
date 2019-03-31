@@ -11,6 +11,7 @@ Heroku app link: https://fotoxo.herokuapp.com/
 
 ### Requirements
 * Rails 5.2.2
+* Ruby 2.5 
 * PostgreSQL
 
 ### Running Locally
@@ -23,7 +24,7 @@ cd photo-app
 bundle install
 rails db:create
 rails db:create
-rails s
+rails server
 ```
 Your app should now be running on [localhost:3000](http://localhost:3000/).
 

@@ -1,24 +1,50 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Photo Management web app using the [Ruby on Rails](http://rubyonrails.org) framework.
 
-Things you may want to cover:
+Heroku app link: https://fotoxo.herokuapp.com/
 
-* Ruby version
+### Key Features
+ - Used transactional email service provider [Sendgrid](https://sendgrid.com) for email verification.
+ - Used [Stripe](https://stripe.com/) API for accepting payments from users.
+ - Used [AWS S3 Bucket](https://aws.amazon.com/s3/) for storage in production.
 
-* System dependencies
+### Requirements
+* Rails 5.2.2
+* PostgreSQL
 
-* Configuration
+### Running Locally
 
-* Database creation
+Make sure you have [Ruby](https://www.ruby-lang.org) and [Bundler](http://bundler.io) installed.
 
-* Database initialization
+```sh
+git clone https://github.com/aakashjhawar/photo-app.git #You can also clone your own fork
+cd photo-app
+bundle install
+rails db:create
+rails db:create
+rails s
+```
+Your app should now be running on [localhost:3000](http://localhost:3000/).
 
-* How to run the test suite
+## Deploying to Heroku
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+heroku create
+git push heroku master
+heroku run rake db:migrate
+heroku open
+```
 
-* Deployment instructions
 
-* ...
+Alternatively, you can deploy your own copy of the app using the web-based flow:
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+## Documentation
+
+For more information about using Ruby on Heroku, see these Dev Center articles:
+
+- [Ruby on Heroku](https://devcenter.heroku.com/categories/ruby)
+- [Getting Started with Ruby on Heroku](https://devcenter.heroku.com/articles/getting-started-with-ruby)
+- [Heroku Ruby Support](https://devcenter.heroku.com/articles/ruby-support)
